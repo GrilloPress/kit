@@ -7,7 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
-var index = require('./routes/index');
+var router = require('./routes/router');
 
 var app = express();
 
@@ -23,6 +23,9 @@ nunjucks.configure(app.get('views'), {
 });
 app.set('view engine', 'html');
 
+// Serve static files from '/static' as pure HTML
+app.use('/static', express.static('static'))
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -37,7 +40,7 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
+app.use('/', router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
