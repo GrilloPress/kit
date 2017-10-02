@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <title>SCRa Mockup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <style>
+    .page-header {
+      color: #005eb8;
+      padding-top: 20px;
+    }
+
+    .form-field {
+      border-bottom: 2px solid #768692;
+      padding-left: 0;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    hr {
+      border-color: #768692;
+    }
+
+    .asterisk {
+      color: red;
+    }
+
+    .card {
+      background-color: rgba(232, 237, 238, 0.2);
+    }
+
+    .card h5 {
+      color: #003087;
+    }
+
+    .form-control-plaintext {
+      width: 100%;
+    }
+
+    .btn-light {
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Find a patient</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Change role</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Print</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Exit</a>
+        </li>
+      </ul>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          Summary Care Record
+          <img src="../../assets/images/logotype-nhs-colour__reverse.png"  height="25" class="d-inline-block align-middle" alt="">
+        </a>
+      </nav>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row" style="background-color: rgba(0, 94, 184, 0.2)">
+      <div class="col-3">
+        <h2 class="page-header">Find a patient</h2>
+      </div>
+      <div class="col-9">
+        <h5 class="text-right" style="padding-top: 25px;">Please search for a patient by either entering their details or <span style="color: #005eb8;">NHS Number</span></h5>
+      </div>
+      <div class="col">
+        <ul class="nav nav-tabs" style="padding-top: 5px;">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Advanced</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Postcode</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px;">
+
+      <div class="col-7">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5>Enter Patient Details</h5>
+              </div>
+              <div class="col">
+                <p class="italic text-right"><span class="asterisk">*</span> Denotes required field</p>
+              </div>
+            </div>
+            <hr />
+            <form class="form-horizontal">
+              <div class="row">
+                <div class="form-group row col-12">
+                  <label class="col-4 text-right"><span class="asterisk">* </span>Gender</label>
+                  <div class="col-8">
+                    <label class="custom-control custom-radio">
+                      <input name="cat" type="radio" class="custom-control-input" value="1">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Male</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input id="mixed0" name="cat" type="radio" class="custom-control-input" value="0">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Female</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group row col-12">
+                  <label for="first-name" class="col-4 col-form-label text-right">First name</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="[First name or name the patient is known by]" id="first-name">
+                  </div>
+                </div>
+                <div class="form-group row col-12">
+                  <label for="surname" class="col-4 col-form-label text-right"><span class="asterisk">* </span>Surname</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" id="surname">
+                  </div>
+                </div>
+                <div class="form-group row col-12">
+                  <label for="dob" class="col-4 col-form-label text-right"><span class="asterisk">* </span>Date of birth</label>
+                  <div class="col-3">
+                    <input class="form-control" type="date" id="dob">
+                  </div>
+                </div>
+                <div class="form-group row col-12">
+                  <label for="postcode" class="col-4 col-form-label text-right">Full postcode</label>
+                  <div class="col-3">
+                    <input class="form-control" type="text" id="postcode">
+                  </div>
+                  <div class="col-4 col-form-label">
+                    <a href="#">Address &amp; Postcode Lookup</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <hr />
+            <div class="row col-12">
+              <div class="col-4"></div>
+              <div class="col-4">
+                <a href="index.html" class="btn btn-primary" role="button">Find</a>
+                <a href="#" class="btn btn-link" role="button">Clear</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-5">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5>Address Finder</h5>
+              </div>
+              <div class="col">
+                <a class="float-right" href="#">Cancel</a>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col">
+                <p>Please enter as much information as you can</p>
+                <p class="italic">** You must fill in at least one of these fields</p>
+              </div>
+            </div>
+            <div class="form-group row col-12">
+              <label for="address" class="col-4 col-form-label text-right">Address</label>
+              <div class="col-8">
+                <input class="form-control" type="text" placeholder="[Street]" id="address" style="margin-bottom:10px;">
+                <input class="form-control" type="text" placeholder="[House number/name]" style="margin-bottom:10px;">
+                <input class="form-control" type="text" placeholder="[Locality]">
+              </div>
+            </div>
+            <div class="form-group row col-12">
+              <label for="town" class="col-4 col-form-label text-right"><span class="asterisk">* </span>Town</label>
+              <div class="col-8">
+                <input class="form-control" type="text" id="town"/>
+              </div>
+            </div>
+            <div class="form-group row col-12">
+              <label for="county" class="col-4 col-form-label text-right">County</label>
+              <div class="col-8">
+                <input class="form-control" type="text" id="county"/>
+              </div>
+            </div>
+            <div class="form-group row col-12">
+              <label for="country" class="col-4 col-form-label text-right">Country</label>
+              <div class="col-8">
+                <input class="form-control-plaintext" value="United Kingdom" type="text" id="country" readonly/>
+              </div>
+            </div>
+            <hr />
+            <div class="row col-12">
+              <div class="col-4"></div>
+              <div class="col-4">
+                <a href="index.html" class="btn btn-primary" role="button">Find</a>
+                <a href="#" class="btn btn-link" role="button">Clear</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" style="margin-top:-75px; margin-bottom: 20px;">
+      <div class="col-7">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5>Find by NHS Number</h5>
+              </div>
+              <div class="col">
+                <p class="italic text-right"><span class="asterisk">*</span> Denotes required field</p>
+              </div>
+            </div>
+            <hr />
+            <div class="form-group row col-12">
+              <label for="nhsNo" class="col-4 col-form-label text-right">NHS Number</label>
+              <div class="col-3">
+                <input class="form-control" type="text" id="nhsNo">
+              </div>
+            </div>
+            <hr />
+            <div class="row col-12">
+              <div class="col-4"></div>
+              <div class="col-4">
+                <a href="index.html" class="btn btn-primary" role="button">Find</a>
+                <a href="#" class="btn btn-link" role="button">Clear</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer" style="background-color: #005eb8; height: 30px;">
+    <div class="container-fluid">
+      <span class="text" style="color: white;"><b>CONFIDENTIAL:</b> PERSONAL PATIENT DATA accessed by USER, NHS - Demographic Administrator</span>
+      <span class="float-right" style="color: white;">Version: r.17-08.5.3.20170911111348</span>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>

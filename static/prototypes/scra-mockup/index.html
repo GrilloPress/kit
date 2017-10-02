@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <title>SCRa Mockup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <style>
+    .italic {font-style: italic; color: gray;}
+    .bold {font-weight: bold;}
+    .form-field{border-bottom: 2px solid #768692; padding-left: 0;}
+    hr {border-color: #768692;}
+    .card {background-color: rgba(232,237,238,0.2);}
+    .card h5 {color: #003087;}
+    .form-control-plaintext {width:100%;}
+    .btn-light {border: 1px solid gray;}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Find a patient</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Change role</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Print</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Exit</a>
+        </li>
+      </ul>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          Summary Care Record
+          <img src="../../assets/images/logotype-nhs-colour__reverse.png"  height="25" class="d-inline-block align-middle" alt="">
+        </a>
+      </nav>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row" style="background-color:#003087;">
+      <div class="col">
+        <ul class="list-inline" style="color:#fff; margin: 5px auto;">
+          <li class="list-inline-item">
+            <h5>Mary POE</h5></li>
+          <li class="list-inline-item"><i>DoB</i> &nbsp; 10-Oct-1997</li>
+          <li class="list-inline-item">Female</li>
+          <li class="list-inline-item"><i>NHS</i> &nbsp; 590 026 0259</li>
+          <li class="list-inline-item"><i>Address</i> &nbsp; 22, Leeds, UNITED KINGDOM</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row" style="background-color: rgba(0, 94, 184, 0.2)">
+      <div class="col">
+        <ul class="nav nav-tabs" style="padding-top: 5px;">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Patient Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FGM</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px;">
+      <div class="col">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Key Demographic Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GP &amp; Care Providers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts &amp; Next of Kin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Histroical Information</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px;">
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5>Name</h5>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-light float-right">Edit</button>
+              </div>
+            </div>
+            <hr />
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <form>
+                  <div class="form-group row">
+                    <label for="usualName" class="col-sm-4 col-form-label text-right">Usual Name</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext bold" id ="usualName" value="Miss Mary Poe">
+                    </div>
+                    <label class="col-sm-4 col-form-label"></label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" value="Effective since 20-Feb-2017">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="preferredName" class="col-sm-4 col-form-label text-right">Preferred Name</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="preferredName" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="alias" class="col-sm-4 col-form-label text-right">Alias</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="alias" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="otherNames" class="col-sm-4 col-form-label text-right">Other Names</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="otherNames" value="Not recorded">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5>Addresses</h5>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-light float-right">Edit</button>
+              </div>
+            </div>
+            <hr />
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <form>
+                  <div class="form-group row">
+                    <label for="usualAddress" class="col-sm-4 col-form-label text-right">Usual Address</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext bold" id ="usualAddress" value="22">
+                      <input type="text" readonly class="form-control-plaintext bold" value="Leeds ">
+                      <input type="text" readonly class="form-control-plaintext bold"  value="UNITED KINGDOM">
+                    </div>
+                    <label class="col-sm-4 col-form-label"></label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" value="Effective since 20-Feb-2017">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="corrAdd" class="col-sm-4 col-form-label text-right">Correspondence address</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="corrAdd" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="tempAdd" class="col-sm-4 col-form-label text-right">Temporary address</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="tempAdd" value="Not recorded">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5>Key Details</h5>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-light float-right">Edit</button>
+              </div>
+            </div>
+            <hr />
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <form>
+                  <div class="form-group row">
+                    <label for="gender" class="col-sm-4 col-form-label text-right">Gender</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext bold" id ="gender" value="Female">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="nhsNo" class="col-sm-4 col-form-label text-right">NHS Number</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext bold" id ="nhsNo" value="590 026 0259">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="dob" class="col-sm-4 col-form-label text-right">Date of Birth</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext bold" id ="dob" value="10-Oct-1997">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="birthOrder" class="col-sm-4 col-form-label text-right">Birth Order</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="birthOrder" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="birthPlace" class="col-sm-4 col-form-label text-right">Place of Birth</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="birthPlace" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="language" class="col-sm-4 col-form-label text-right">Language</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="language" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="consentShare" class="col-sm-4 col-form-label text-right">Consent to share</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext bold" id ="consentShare" value="Implied Consent">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" style="margin-top: 15px;">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5>Contact Information</h5>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-light float-right">Edit</button>
+              </div>
+            </div>
+            <hr />
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <form>
+                  <div class="form-group row">
+                    <label for="tel" class="col-sm-4 col-form-label text-right">Telephone</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="tel" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="email" class="col-sm-4 col-form-label text-right">Email</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="email" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="fax" class="col-sm-4 col-form-label text-right">Fax</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="fax" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="Textphone" class="col-sm-4 col-form-label text-right">Textphone</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="textphone" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="writtenComm" class="col-sm-4 col-form-label text-right">Written communication</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="writtenComm" value="Not recorded">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="contactPref" class="col-sm-4 col-form-label text-right">Contact preferences</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext italic" id ="contactPref" value="Not recorded">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" style="margin-bottom: 20px;">
+
+      <div class="col" style="margin-top: 15px;">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5>Summary Care Record/Consent Preferende</h5>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-light float-right">Edit</button>
+              </div>
+            </div>
+            <hr />
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <form>
+                  <div class="form-group row">
+                    <label for="scrConsent" class="col-sm-4 col-form-label text-right">SCR Consent Preference</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext bold" id ="scrConsent" value="Permission to view required">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5>National Opt-Out Model Consent Preferences</h5>
+              </div>
+              <div class="col">
+                <a  class="btn btn-light float-right" href="ndop-preferences.html" role="button">Edit</a>
+              </div>
+            </div>
+            <hr />
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <form>
+                  <div class="form-group row">
+                    <label for="researchPref" class="col-sm-4 col-form-label text-right">Research Use Consent Preference</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext bold" id ="researchPref" value="Implied Consent">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="adminPref" class="col-sm-4 col-form-label text-right">NHS and Social Care Admin Use Consent Preference</label>
+                    <div class="col-sm-8 form-field">
+                      <input type="text" readonly class="form-control-plaintext bold" id ="adminPref" value="Implied Consent">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="footer" style="background-color: #005eb8; height: 30px;">
+      <div class="container-fluid">
+            <span class="text" style="color: white;"><b>CONFIDENTIAL:</b> PERSONAL PATIENT DATA accessed by USER, NHS - Demographic Administrator</span>
+            <span class="float-right" style="color: white;">Version: r.17-08.5.3.20170911111348</span>
+      </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>
