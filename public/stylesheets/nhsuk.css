@@ -1104,7 +1104,7 @@ table {
       padding-top: 24px; } }
 
 .global-header__link {
-  background: url("../assets/images/logotype-nhs-colour__reverse.png") no-repeat;
+  background: url("../images/logotype-nhs-colour__reverse.png") no-repeat;
   background-size: contain;
   display: block;
   height: 32px;
@@ -1112,7 +1112,7 @@ table {
   width: 79px; }
   @media (min-resolution: 192dpi) {
     .global-header__link {
-      background-image: url("../assets/images/logotype-nhs-colour__reverse@2x.png");
+      background-image: url("../images/logotype-nhs-colour__reverse@2x.png");
       background-size: 79px 32px; } }
   @media (min-width: 641px) {
     .global-header__link {
@@ -1204,7 +1204,7 @@ table {
       padding-bottom: 128px;
       padding-top: 48px; } }
   .global-footer__inner:before {
-    background: url("../assets/images/logotype-nhs-colour.png") no-repeat;
+    background: url("../images/logotype-nhs-colour.png") no-repeat;
     background-size: contain;
     content: "";
     display: block;
@@ -1217,7 +1217,7 @@ table {
         margin-bottom: 48px; } }
     @media (min-resolution: 192dpi) {
       .global-footer__inner:before {
-        background-image: url("../assets/images/logotype-nhs-colour@2x.png");
+        background-image: url("../images/logotype-nhs-colour@2x.png");
         background-size: 79px 32px; } }
 
 .notification-banner {

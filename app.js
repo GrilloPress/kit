@@ -24,7 +24,7 @@ nunjucks.configure(app.get('views'), {
 app.set('view engine', 'html');
 
 // Serve static files from '/static' as pure HTML
-app.use('/static', express.static('static'))
+app.use('/static', express.static('static'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
