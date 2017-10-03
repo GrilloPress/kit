@@ -39,6 +39,8 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', router);
+app.use('/home', router);
+app.use('/v1/', router);
 app.use('/v1/:view', router);
 
 // catch 404 and forward to error handler

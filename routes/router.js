@@ -11,6 +11,11 @@ router.get('/home', function(req, res, next) {
   res.render( 'index' );
 });
 
+/* GET v1 index page. */
+router.get('/v1', function(req, res, next) {
+  res.render( 'v1/index' );
+});
+
 // GET all v1 URL reqs and push them to a template in the v1 file
 // This doesn't handle sub-urls yet...
 // This feels really brittle and hacky..
