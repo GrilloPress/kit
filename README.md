@@ -22,7 +22,9 @@ In ```/routes/router.js``` you need to copy the v1 box and replace all reference
 
 In ```/app.js``` you need to copy and create the v1 routes and replace all references with the version you have created.
 
-In ```/views``` you need to create a subdirectory named
+In ```/views``` you need to create a subdirectory named after the version you have just created.
+
+For example, if you now want to work on v2, you create within your ```/views``` directory a new subdirectory called v2 with a ```index.html``` file inside (a copy of what you find in v1).
 
 ## Warning
 
