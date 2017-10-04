@@ -10,7 +10,7 @@ Kit is based on the express.js generator and the structure remains identical apa
 
 1. Any ```.html``` files in the static directory will be served as is. Be sure to avoid naming your HTML things like ```index.html``` or anything that will interrupt your named routes in ```routes.js```.
 2. We use Nunjucks instead of Pug/Jade but we use the ```.html``` file extension. ```.njk``` will not work!.
-3. We have a pre-established way of creating new versions within the app by adding ```.html``` files within the ```v1``` directory. All routes will automatically appear to one level (ie no subdirectories just yet!)
+3. We have a pre-established way of creating new versions within the app by adding ```.html``` files within the ```v1``` directory. All routes will automatically appear to two levels!
 
 If you want to set up another version, you copy the code for setting the v1 route with your new number.
 
