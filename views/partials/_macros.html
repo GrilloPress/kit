@@ -2,19 +2,23 @@
 <nav role="navigation" aria-label="Guide pagination">
   <ul class="article-pagination">
 
-    <li class="article-pagination__item article-pagination__item--left">
-      <a title="{{ prevTitle }}" href="{{ prevLink | safe }}" rel="prev">
-        <span class="article-pagination__prefix">Previous page:</span>
-        <span class="article-pagination__title">{{ prevTitle }}</span>
-      </a>
-    </li>
-
+    {% if prevTitle %}
+      <li class="article-pagination__item article-pagination__item--left">
+        <a title="{{ prevTitle }}" href="{{ prevLink | safe }}" rel="prev">
+          <span class="article-pagination__prefix">Previous page:</span>
+          <span class="article-pagination__title">{{ prevTitle }}</span>
+        </a>
+      </li>
+    {% endif %}
+    
+    {% if nextTitle %}
     <li class="article-pagination__item article-pagination__item--right">
       <a title="{{ nextTitle }}" href="{{ nextLink | safe }}" rel="next">
         <span class="article-pagination__prefix">Next page:</span>
         <span class="article-pagination__title">{{ nextTitle }}</span>
       </a>
     </li>
+    {% endif %}
     
   </ul>
 </nav>

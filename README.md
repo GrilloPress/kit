@@ -59,6 +59,12 @@ To include a page navigation system, at the bottom of your page you can add the 
 {{ patterns.page_nav( "Previous Page Title", "Previous Page Link", "Next Page Title", "Next Page Link" ) }}
 ```
 
+If you need to not include either a previous link or a next one... you just leave the bit blank... as in:
+
+```
+{{ patterns.page_nav( "", "", "Next Page Title", "Next Page Link" ) }}
+```
+
 ### Further information
 
 For more info about Nunjuck macros see: https://mozilla.github.io/nunjucks/templating.html
