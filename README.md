@@ -44,3 +44,21 @@ cd name_of_project
 npm install
 npm start
 ```
+
+## Macro Pattern Library
+
+Inside the project is a macro pattern library. This is located in ```views/partials/_macros.html```
+
+These are small snippets that allow you to quickly create elements on a page.
+
+### Example
+
+To include a page navigation system, at the bottom of your page you can add the following snippet:
+
+```
+{{ patterns.page_nav( "Previous Page Title", "Previous Page Link", "Next Page Title", "Next Page Link" ) }}
+```
+
+### Further information
+
+For more info about Nunjuck macros see: https://mozilla.github.io/nunjucks/templating.html
