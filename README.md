@@ -42,7 +42,23 @@ After that, locate where you want it to live on your machine and run the followi
 git clone https://github.com/GrilloPress/kit.git name_of_project
 cd name_of_project
 npm install
-npm start
+npm devstart
+```
+
+#### Running this in development mode
+
+This kit comes with nodemon, which restarts your server everytime you make a change. No need to stop your server manually everytime you add a route etc.
+
+To run this with nodemon you run:
+
+```
+npm devstart
+```
+
+To run this in production mode, without nodemon watching your files and restarting your server on every change you make, run:
+
+```
+npm start 
 ```
 
 ## Macro Pattern Library
