@@ -26,9 +26,6 @@
           </svg>
         </a>
       </div>
-      <div class="nhsuk-transaction-header">
-        <p class="nhsuk-transaction-header__title">Find out who's looked at your health records</p>
-      </div>
     </div>
   </header>
   <!--  Header with logo end -->
@@ -38,6 +35,9 @@
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-three-quarters">
             {% block body %}{% endblock %}
+          </div>
+          <div class="nhsuk-grid-column-one-quarter">
+            {% block sidebar %}{% endblock %}
           </div>
         </div>
       </main>
