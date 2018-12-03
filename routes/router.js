@@ -1,70 +1,46 @@
 var express = require('express');
 var router = express.Router();
 
-// End of app... kill session with req.session.destroy()
-
+// catch all GET routes
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render( 'index' );
 });
 
-/* GET home page. */
-router.get('/home', function(req, res, next) {
-  res.render( 'index' );
-});
-
-// // // // // // //
-// v1 Directory Route Code
-//
-// Copy this and replace with v2 etc. to recreate
-// // // // // // //
-
-// GET v1 index page.
-router.get('/v1', function(req, res, next) {
-
-  res.render( 'v1/index', {
-    session: req.session
-  } );
-});
-
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.get('/v1/:view', function(req, res, next) {
+router.get('/:view', function(req, res, next) {
   var theView = req.params.view;
-  res.render( 'v1/' + theView, {
-    session: req.session
-  } );
+  res.render( theView );
 });
 
-router.get('/v1/:subdir/:view', function(req, res, next) {
+router.get('/:subdir/:view', function(req, res, next) {
   var theView = req.params.view;
   var theDir = req.params.subdir;
-  res.render( 'v1/' + theDir + '/' + theView, {
-    session: req.session
-  } );
+  res.render( theDir + '/' + theView );
 });
 
-router.post('/v1', function (req, res) {
+router.get('/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( theDir + '/' + theDir2 + '/' + theView );
+});
 
-  // Make a variable and give it the value from 'juggling-balls'
-  var jugglingBalls = req.body['juggling-balls']
+router.get('/:subdir/:subdir2/:subdir3/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  var theDir3 = req.params.subdir3;
+  res.render( theDir + '/' + theDir2 + '/' + theDir3 + '/' + theView );
+});
 
-  // Check whether the variable matches a condition
-  if (jugglingBalls == "3 or more"){
-    // Send user to next page
-    req.session.jugglingBalls = jugglingBalls
-    res.redirect('/v1/next')
-  }
-  else {
-    // Send user to ineligible page
-    req.session.jugglingBalls = jugglingBalls
-    res.redirect('/ineligible')
-  }
-
-})
-
-// // // // // // //
+router.get('/:subdir/:subdir2/:subdir3/:subdir4/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  var theDir3 = req.params.subdir3;
+  var theDir4 = req.params.subdir4;
+  res.render( theDir + '/' + theDir2 + '/' + theDir3 + '/' + theDir4 + '/' + theView );
+});
 
 module.exports = router;

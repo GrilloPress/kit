@@ -14,6 +14,14 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 
+app.use('/nhsuk-frontend', express.static(path.join(__dirname, '/node_modules/nhsuk-frontend/packages')));
+
+nunjucks.configure('node_modules/nhsuk-frontend/components', {
+  autoescape: true,
+  cache: false,
+  express: app
+})
+
 // Setup nunjucks templating engine
 nunjucks.configure(app.get('views'), {
     autoescape: true,
