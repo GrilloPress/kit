@@ -1790,8 +1790,10 @@ b {
       width: 25% !important; } }
 
 .nhsuk-transaction-header {
-  padding: 20px;
-  padding-bottom: 20px; }
+  padding: 0; }
+  @media (min-width: 40.0625em) {
+    .nhsuk-transaction-header {
+      padding: 20px; } }
 
 .nhsuk-transaction-header__title {
   color: #ffffff;
@@ -1801,5 +1803,12 @@ b {
   @media (min-width: 40.0625em) {
     .nhsuk-transaction-header__title {
       line-height: 2; } }
+
+.nhsuk-header__logo {
+  padding-left: 0px;
+  padding-right: 0px; }
+  @media (min-width: 40.0625em) {
+    .nhsuk-header__logo {
+      padding-right: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
