@@ -1,0 +1,23 @@
+
+// for now...
+
+// Core (required)
+@import 'node_modules/nhsuk-frontend/packages/core/all';
+
+.nhsuk-transaction-header {
+
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+.nhsuk-transaction-header__title {
+
+  color: $color_nhsuk-white;
+  float: left;
+  margin: 0;
+  margin-bottom: 10px;
+  @include mq($from: tablet) {
+    line-height: 2;
+  }
+
+}
