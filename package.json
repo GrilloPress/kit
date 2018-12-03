@@ -7,18 +7,19 @@
     "devstart": "./node_modules/nodemon/bin/nodemon.js ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.17.1",
+    "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
-    "express": "~4.15.2",
+    "express": "^4.16.4",
     "express-session": "^1.15.6",
-    "morgan": "~1.8.1",
+    "morgan": "^1.9.1",
+    "nhsuk-frontend": "^0.2.1",
     "node-sass-middleware": "0.9.8",
-    "nunjucks": "^3.0.1",
+    "nunjucks": "^3.1.4",
     "serve-favicon": "~2.4.2",
     "twig": "~0.10.3"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.18.7"
   }
 }
