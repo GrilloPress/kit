@@ -1833,6 +1833,48 @@ b {
     .nhsuk-u-width-one-quarter {
       width: 25% !important; } }
 
+.audit-promo {
+  margin-bottom: 36px;
+  /* [1] */
+  width: 100%; }
+
+.audit-promo-wrapper {
+  background-color: #ffffff;
+  box-shadow: 0 4px 0 0 #d8dde0;
+  /* [2] */
+  display: block;
+  height: 100%;
+  /* [3] */
+  position: relative;
+  /* [4] */
+  text-decoration: none;
+  /* [5] */ }
+
+.audit-promo__img {
+  border-bottom: 1px solid #f0f4f5;
+  /* [8] */
+  display: block;
+  width: 100%; }
+  @media print {
+    .audit-promo__img {
+      display: none; } }
+
+.audit-promo__heading {
+  margin-bottom: 16px; }
+
+.audit-promo__content {
+  padding: 24px; }
+  .audit-promo__content > *:first-child {
+    margin-top: 0; }
+  .audit-promo__content > *:last-child {
+    margin-bottom: 0; }
+  @media (min-width: 40.0625em) {
+    .audit-promo__content {
+      padding: 32px; } }
+
+.audit-promo__description {
+  color: #425563; }
+
 .nhsuk-transaction-header {
   padding: 0; }
   @media (min-width: 40.0625em) {

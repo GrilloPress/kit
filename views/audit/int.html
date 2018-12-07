@@ -1,4 +1,4 @@
-{% set title = 'Express Prototyping Kit' %}
+{% set title = 'Do you have an NHS login?' %}
 {% set serviceName = "Audit and transparency" %}
 {% block scripts %}
 {% endblock %}
@@ -24,13 +24,33 @@
 {% from 'tables/macro.njk' import table %}
 {% from 'warning-callout/macro.njk' import warningCallout %}
 {% from 'radios/macro.njk' import radios %}
+{% from 'button/macro.njk' import button %}
+
 
 {% block body %}
 <div class="nhsuk-u-reading-width">
-  <h1>{{title}} - {{serviceName}}</h1>
-  <p>Welcome to the {{title}}.</p>
-  <p>This kit is designed to quickly let you create simple pages. You can leverage nunjuck templating in your .html files</p>
+
+  <div class="audit-promo">
+    <div class="audit-promo-wrapper">
+      <div class="audit-promo__content">
+        <h1 class="audit-promo__heading nhsuk-heading-l">Continue journey</h1>
+        <p>
+          At this stage of your journey, you would either log in or create your account.
+        </p>
+        <p>
+          You would then be redirected back to this service.
+        </p>
+        <button type="submit" class="nhsuk-button" onclick="window.location.href='int'">
+          Continue
+        </button>
+    </div>
+  </div>
+
 </div>
+
+</div>
+
 {% endblock %}
+
 {% block sidebar %}
 {% endblock %}

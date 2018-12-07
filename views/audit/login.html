@@ -1,4 +1,4 @@
-{% set title = 'Express Prototyping Kit' %}
+{% set title = 'Do you have an NHS login?' %}
 {% set serviceName = "Audit and transparency" %}
 {% block scripts %}
 {% endblock %}
@@ -24,13 +24,43 @@
 {% from 'tables/macro.njk' import table %}
 {% from 'warning-callout/macro.njk' import warningCallout %}
 {% from 'radios/macro.njk' import radios %}
+{% from 'button/macro.njk' import button %}
+
 
 {% block body %}
 <div class="nhsuk-u-reading-width">
-  <h1>{{title}} - {{serviceName}}</h1>
-  <p>Welcome to the {{title}}.</p>
-  <p>This kit is designed to quickly let you create simple pages. You can leverage nunjuck templating in your .html files</p>
+{{ radios({
+  "idPrefix": "nhs-login",
+  "name": "nhs-login",
+  "fieldset": {
+    "legend": {
+      "text": "Do you have an NHS login?",
+      "isPageHeading": true,
+      "classes": "nhsuk-fieldset__legend--l"
+    }
+  },
+  "items": [
+    {
+      "value": "yes",
+      "text": "Yes"
+    },
+    {
+      "value": "no",
+      "text": "No, I'll need to create one"
+    },
+    {
+      "value": "unsure",
+      "text": "I'm unsure"
+    }
+  ]
+}) }}
+
+  <button type="submit" class="nhsuk-button" onclick="window.location.href='int'">
+    Continue
+  </button>
 </div>
+
 {% endblock %}
+
 {% block sidebar %}
 {% endblock %}

@@ -1,8 +1,8 @@
-{% set title = 'Express Prototyping Kit' %}
-{% set serviceName = "Audit and transparency" %}
+{% set title = 'Do you have an NHS login?' %}
+{% set serviceName = "Find out who's looked at your health records" %}
 {% block scripts %}
 {% endblock %}
-{% extends 'layouts/layout.html' %}
+{% extends 'layouts/layout-nhsuk.html' %}
 {% from 'action-link/macro.njk' import actionLink %}
 {% from 'nav-a-z/macro.njk' import azNav %}
 {% from 'breadcrumb/macro.njk' import breadcrumb %}
@@ -24,13 +24,40 @@
 {% from 'tables/macro.njk' import table %}
 {% from 'warning-callout/macro.njk' import warningCallout %}
 {% from 'radios/macro.njk' import radios %}
+{% from 'button/macro.njk' import button %}
+
 
 {% block body %}
+
 <div class="nhsuk-u-reading-width">
-  <h1>{{title}} - {{serviceName}}</h1>
-  <p>Welcome to the {{title}}.</p>
-  <p>This kit is designed to quickly let you create simple pages. You can leverage nunjuck templating in your .html files</p>
+  <h1>{{serviceName}}</h1>
+  <p>
+    Use this service to find out who’s looked at your Summary Care Record.
+  </p>
+  <p>
+    Your Summary Care Record comes from your GP record. It tells health and care staff:
+  </p>
+  <ul>
+    <li>your allergies</li>
+    <li>your medicines</li>
+    <li>any reactions you've had to medicines</li>
+  </ul>
+  <p>
+  <h2>Before you start</h2>
+  <p>
+    To use this service you'll need:
+  </p>
+  <ul>
+    <li>to be 16 or older</li>
+    <li>an NHS login</li>
+  </ul>
+  <p>If you do not have an NHS login you’ll be able to set one up.</p>
+  <button type="submit" class="nhsuk-button" onclick="window.location.href='login'">
+    Continue
+  </button>
 </div>
+
 {% endblock %}
+
 {% block sidebar %}
 {% endblock %}

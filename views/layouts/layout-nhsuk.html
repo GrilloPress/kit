@@ -117,7 +117,15 @@
 
 
   <!--  Header with logo end -->
-    {% block body %}{% endblock %}
+  <div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper" id="maincontent">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            {% block body %}{% endblock %}
+          </div>
+        </div>
+      </main>
+    </div>
     {% include "partials/_footer.html" %}
   </body>
 </html>
