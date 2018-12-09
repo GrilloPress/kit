@@ -1,0 +1,30 @@
+body {
+
+  background-color: $color_nhsuk-white;
+
+}
+
+.nhsuk-header {
+  background-color: $color_nhsuk-white;
+  min-height: 120px;
+}
+
+.nhsuk-header__logo .nhsuk-logo {
+
+  height: 80px;
+}
+
+.nhsdigital-banner {
+
+  background-color: $color_nhsuk-blue;
+
+  a {
+
+    color: $color_nhsuk-white;
+  }
+}
+
+.nhsdigital-banner {
+
+  padding: 16px 0;
+}
