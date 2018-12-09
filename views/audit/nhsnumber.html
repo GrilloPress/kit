@@ -1,0 +1,61 @@
+{% set title = 'Do you have an NHS login?' %}
+{% set serviceName = "Audit and transparency" %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+{% from 'action-link/macro.njk' import actionLink %}
+{% from 'nav-a-z/macro.njk' import azNav %}
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
+{% from 'care-card/macro.njk' import careCard %}
+{% from 'contents-list/macro.njk' import contentsList %}
+{% from 'details/macro.njk' import details %}
+{% from 'header/macro.njk' import header %}
+{% from 'hero/macro.njk' import hero %}
+{% from 'footer/macro.njk' import footer %}
+{% from 'do-dont-list/macro.njk' import list %}
+{% from 'images/macro.njk' import image %}
+{% from 'inset-text/macro.njk' import insetText %}
+{% from 'list-panel/macro.njk' import listPanel %}
+{% from 'pagination/macro.njk' import pagination %}
+{% from 'panel/macro.njk' import panel %}
+{% from 'promo/macro.njk' import promo %}
+{% from 'review-date/macro.njk' import reviewDate %}
+{% from 'skip-link/macro.njk' import skipLink %}
+{% from 'tables/macro.njk' import table %}
+{% from 'warning-callout/macro.njk' import warningCallout %}
+{% from 'radios/macro.njk' import radios %}
+{% from 'button/macro.njk' import button %}
+{% from 'input/macro.njk' import input %}
+{% from 'label/macro.njk' import label %}
+
+
+{% block body %}
+<div class="nhsuk-u-reading-width">
+
+  <form class="" method="get" action="int.html">
+    {{ input({
+      "label": {
+        "text": "Enter your NHS number",
+        "classes": "nhsuk-label--l",
+        "isPageHeading": true
+      },
+      "hint": {
+        "text": "This is a 10 digit number, like 485 777 3456."
+      },
+      "id": "nhsNumber",
+      "name": "nhsNumber",
+      "classes": "nhsuk-input--width-10"
+    }) }}
+
+    <button type="submit" class="nhsuk-button">
+      Continue
+    </button>
+
+  </form>
+
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}
