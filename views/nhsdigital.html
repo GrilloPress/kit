@@ -24,6 +24,9 @@
 {% from 'tables/macro.njk' import table %}
 {% from 'warning-callout/macro.njk' import warningCallout %}
 {% from 'radios/macro.njk' import radios %}
+{% block pageband %}
+<a href="/" class="nhsuk-header__transactional-service-name--link">{{serviceName}}</a>
+{% endblock %}
 
 {% block body %}
 <div class="nhsuk-u-reading-width">
@@ -32,5 +35,6 @@
   <p>This kit is designed to quickly let you create simple pages. You can leverage nunjuck templating in your .html files</p>
 </div>
 {% endblock %}
+
 {% block sidebar %}
 {% endblock %}
