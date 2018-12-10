@@ -1,0 +1,128 @@
+{% set title = 'Do you have an NHS login?' %}
+{% set serviceName = "Audit and transparency" %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+{% from 'action-link/macro.njk' import actionLink %}
+{% from 'nav-a-z/macro.njk' import azNav %}
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
+{% from 'care-card/macro.njk' import careCard %}
+{% from 'contents-list/macro.njk' import contentsList %}
+{% from 'details/macro.njk' import details %}
+{% from 'header/macro.njk' import header %}
+{% from 'hero/macro.njk' import hero %}
+{% from 'footer/macro.njk' import footer %}
+{% from 'do-dont-list/macro.njk' import list %}
+{% from 'images/macro.njk' import image %}
+{% from 'inset-text/macro.njk' import insetText %}
+{% from 'list-panel/macro.njk' import listPanel %}
+{% from 'pagination/macro.njk' import pagination %}
+{% from 'panel/macro.njk' import panel %}
+{% from 'promo/macro.njk' import promo %}
+{% from 'review-date/macro.njk' import reviewDate %}
+{% from 'skip-link/macro.njk' import skipLink %}
+{% from 'tables/macro.njk' import table %}
+{% from 'warning-callout/macro.njk' import warningCallout %}
+{% from 'radios/macro.njk' import radios %}
+{% from 'button/macro.njk' import button %}
+
+
+{% block body %}
+<div class="nhsuk-u-reading-width">
+  <ol class="nhsuk-list">
+    <li>
+      <div class="nhsuk-list-panel">
+        <h2 class="nhsuk-list-panel__label" id="A">A</h2>
+        <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label ">
+          <li class="nhsuk-list-panel__item">
+            <h3 class="nhsuk-list-panel-heading">Friday 21 September 2018</h3>
+            <ol class="nhsuk-list-panel-inner-list">
+              <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" aria-label="3:32pm, Leeds Teaching HospitalsNHS Trust" href="/conditions/abscess/">
+                  <div class="">
+                    3:32pm
+                  </div>
+                  <div class="">
+                    Leeds Teaching Hospitals NHS Trust
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right nhsuk-list-panel-inner-list__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                      <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/assets/images/icons/icon-chevron-right-grey.png" xlink:href=""></image></svg>
+                  </div>
+                  <div class="nhsuk-list-panel-inner-list__link">
+                    Further details
+                  </div>
+                </a>
+              </li>
+                </ol>
+          </li>
+          <li class="nhsuk-list-panel__item">
+            <a class="nhsuk-list-panel__link" href="/conditions/abdominal-aortic-aneurysm/">Abdominal aortic aneurysm</a>
+          </li>
+          <li class="nhsuk-list-panel__item">
+            <a class="nhsuk-list-panel__link" href="/conditions/abscess/">Abscess</a>
+          </li>
+        </ul>
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+            </svg> Back to top </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="nhsuk-list-panel">
+        <h2 class="nhsuk-list-panel__label" id="B">B</h2>
+        <div class="nhsuk-list-panel__box nhsuk-list-panel__box--with-label ">
+          <p class="nhsuk-list-panel--results-items__no-results">There are currently no conditions listed</p>
+        </div>
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+            </svg> Back to top </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="nhsuk-list-panel">
+        <h2 class="nhsuk-list-panel__label" id="C">C</h2>
+        <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label ">
+          <li class="nhsuk-list-panel__item">
+            <a class="nhsuk-list-panel__link" href="/conditions/chest-pain/">Chest pain</a>
+          </li>
+          <li class="nhsuk-list-panel__item">
+            <a class="nhsuk-list-panel__link" href="/conditions/cold-sores/">Cold sore</a>
+          </li>
+        </ul>
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+            </svg> Back to top </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="nhsuk-list-panel">
+        <h2 class="nhsuk-list-panel__label" id="D">D</h2>
+        <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label ">
+          <li class="nhsuk-list-panel__item">
+            <a class="nhsuk-list-panel__link" href="/conditions/dandruff/">Dandruff</a>
+          </li>
+          <li class="nhsuk-list-panel__item">
+            <a class="nhsuk-list-panel__link" href="/conditions/dementia/">Dementia</a>
+          </li>
+          <li class="nhsuk-list-panel__item">
+            <a class="nhsuk-list-panel__link" href="/conditions/toothache/">Dental pain</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}

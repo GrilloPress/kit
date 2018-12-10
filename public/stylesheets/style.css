@@ -1875,6 +1875,43 @@ b {
 .audit-promo__description {
   color: #425563; }
 
+.nhsuk-list-panel-heading {
+  margin-top: 16px;
+  padding: 4px 16px; }
+
+.nhsuk-list-panel-inner-list {
+  padding: 0;
+  border-top: 1px solid #d8dde0;
+  margin-bottom: 0; }
+  .nhsuk-list-panel-inner-list a {
+    color: #212b32; }
+
+.nhsuk-list-panel-inner-list__link {
+  margin-top: 8px;
+  color: #005eb8;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  text-decoration: underline; }
+  @media (min-width: 40.0625em) {
+    .nhsuk-list-panel-inner-list__link {
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.5; } }
+  @media print {
+    .nhsuk-list-panel-inner-list__link {
+      font-size: 14pt;
+      line-height: 1.2; } }
+
+.nhsuk-list-panel-inner-list__icon {
+  float: right; }
+  @media (max-width: 40.0525em) {
+    .nhsuk-list-panel-inner-list__icon {
+      height: 26px;
+      width: 26px;
+      margin-right: -4px; } }
+
 .nhsuk-transaction-header {
   padding: 0; }
   @media (min-width: 40.0625em) {

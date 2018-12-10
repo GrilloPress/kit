@@ -1,0 +1,36 @@
+.nhsuk-list-panel-heading {
+  margin-top: nhsuk-spacing(3);
+  padding: nhsuk-spacing(1) nhsuk-spacing(3);
+}
+
+.nhsuk-list-panel-inner-list {
+  padding: 0;
+  border-top: 1px solid $color_nhsuk-grey-4;
+  margin-bottom: 0;
+
+  a {
+
+    color: $color_nhsuk-black;
+
+  }
+}
+
+.nhsuk-list-panel-inner-list__link {
+
+  margin-top: nhsuk-spacing(2);
+  color: $color_nhsuk-blue;
+  @include nhsuk-font(16);
+  text-decoration: underline;
+}
+
+.nhsuk-list-panel-inner-list__icon {
+  float: right;
+
+  @include mq($until: tablet) {
+
+    height: 26px;
+    width: 26px;
+    margin-right: -4px;
+  }
+
+}
